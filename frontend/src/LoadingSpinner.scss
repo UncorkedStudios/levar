@@ -1,0 +1,23 @@
+.spinner_outer_container {
+	height: 56px;
+	width: 100%;
+	position: relative;
+	bottom: 9px;
+	left: 0;
+
+	.spinner_container {
+		height: 56px;
+		width: 100%;
+		z-index: 1000;
+		display: none;
+		margin-bottom: 0 auto;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&.active {
+			display: block;
+		}
+	}
+
+}

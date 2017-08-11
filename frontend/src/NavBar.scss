@@ -1,0 +1,32 @@
+@import './_SharedVariables.scss';
+
+.navbar__container {
+  position: relative;
+  box-shadow: 0 0 8px $darker;
+  z-index: 1000;
+  text-align: left;
+
+  .navbar__squiggle {
+    width: 4em;
+    position: absolute;
+    right: 0;
+    top: 49%;
+    fill: $light;
+  }
+
+  h1 {
+    padding: 1em 2em;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  h1 > a {
+    color: $lighter;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  h1 > a:hover {
+    color: $accent;
+  }
+}

@@ -1,0 +1,33 @@
+@import './_SharedVariables.scss';
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
+.flex-container {
+  flex-direction:row;
+  width:300px;
+}
+
+.font_style__preview {
+  text-align:center;
+  font-size: 1.25rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $light;
+  color: #ffffff;
+  text-transform:uppercase;
+  line-height:30px;
+}
+
+.NovaMono {
+  font-family:'Nova Mono', monospace;
+}
+
+.OverpassMono-Regular {
+  font-family:'Overpass Mono', monospace;
+}
+
+.ShareTechMono-Regular {
+  font-family:'Share Tech Mono', monospace;
+}

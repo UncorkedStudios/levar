@@ -1,0 +1,40 @@
+@import './_SharedVariables.scss';
+
+.footer__container {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  background: $darker;
+  padding: 2em 5vw;
+}
+
+.footer_brand__container {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.footer_brand__container:hover * {
+  color: $accent;
+  fill: $accent;
+}
+
+.footer_logo {
+  width: 1.5em;
+  height: 1.5em;
+  padding-right: 0.5em;
+  fill: $lighter;
+}
+
+.footer_brand {
+  color: $lighter;
+  text-decoration: none;
+}
+
+.footer_copy__container {
+  display: flex;
+  align-items: center;
+  color: $light;
+  font-weight: lighter;
+}

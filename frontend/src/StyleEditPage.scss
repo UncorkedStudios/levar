@@ -1,0 +1,22 @@
+@import './_SharedVariables.scss';
+
+.style_edit__tab_container {
+  display: flex;
+  border-bottom: 1px solid $darker;
+  margin-bottom: 1em;
+}
+
+.style_edit__tab {
+  cursor: pointer;
+  font-size: 1.25em;
+  display: flex;
+  width: 50%;
+  height: 2.5em;
+  align-items: center;
+  border-bottom: 7px solid transparent;
+  justify-content: center;
+}
+
+.style_edit__tab.active {
+  border-bottom: 7px solid $accent;
+}

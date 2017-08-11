@@ -1,0 +1,35 @@
+.progressBar {
+	display: none;
+	height: 56px;
+	width: 100%;
+	background: rgba(139, 142, 194, 1);
+	position: fixed;
+    bottom: 0;
+    z-index: 1000;
+
+    &.active {
+		display: block;
+	}
+
+	& h2 {
+		font-size: 14pt;
+		color: #E5E5E6;
+		position: absolute;
+		top: 50%;
+	    transform: translateY(-50%);
+	    margin-left: 15pt;
+
+	    &.cancel{
+			right: 15pt;
+			cursor: pointer;
+			color: rgb(59, 236, 182);
+		}
+	}
+
+	.progressPercentage {
+		height: 56px;
+		background: #FFF;
+		opacity: 0.2;
+	}
+
+}

@@ -1,0 +1,39 @@
+@import './_SharedVariables.scss';
+
+html, body {
+  margin: 0;
+  background: $dark;
+  color: $lighter;
+  font-family: $default-sans;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0 0 3rem;
+}
+
+h3 {
+  font-weight: 400;
+  margin:  0 0 2rem;
+}
+
+.global__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: auto;
+  padding: 4vw;
+}
+
+.hidden {
+  display: none;
+}

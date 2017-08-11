@@ -1,0 +1,30 @@
+@import './_SharedVariables.scss';
+
+.wordedit_input__container {
+  input {
+    font-family: 'Cousine', monospace;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.25rem 0.2em;
+    color: $lighter;
+    font-size: 2rem;
+    background: transparent;
+    border: 2px solid $light;
+    outline: none;
+    caret-color: $lighter;
+    width: auto;
+  }
+
+  input::placeholder {
+    color: $light;
+  }
+
+  input:focus {
+    background: $light;
+    border: 2px solid $accent;
+  }
+
+  input:disabled {
+    border: 2px solid transparent;
+  }
+}

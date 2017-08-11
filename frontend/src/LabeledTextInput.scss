@@ -1,0 +1,28 @@
+@import './_SharedVariables.scss';
+
+.labeledtext_input__container {
+  label {
+    font-size: 0.75rem;
+  }
+
+  input {
+    width: 7ch;
+    margin: 0.25rem;
+    color: $lighter;
+    font-size: 2rem;
+    background: $dark;
+    border: 1px solid $darker;
+    outline: none;
+    caret-color: $lighter;
+  }
+
+  input::placeholder {
+    color: $light;
+  }
+
+  input:focus {
+    color: $accent;
+    background: $light;
+    border: 1px solid $light;
+  }
+}

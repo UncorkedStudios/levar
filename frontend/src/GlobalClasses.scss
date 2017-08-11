@@ -1,0 +1,85 @@
+@import './_SharedVariables.scss';
+
+.btn {
+  cursor: pointer;
+  background: none;
+  font-size: 1rem;
+  border-radius: 10rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:disabled {
+  border: 3px solid $darken;
+  color: $darken;
+}
+
+.btn:hover:disabled {
+  border: 3px solid $darken;
+  background: transparent;
+  color: $darken;
+}
+
+.btn-accent {
+  border: 3px solid $accent;
+  color: $accent;
+}
+
+.btn-toggle {
+  padding: 0.5em;
+  border: 2px solid $lighter;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.btn-toggle > * {
+  fill: $lighter;
+}
+
+.btn-toggle.active {
+  border: 3px solid transparent;
+  background: linear-gradient(45deg, $accent, $light-accent);
+}
+
+.btn-toggle.active > * {
+  fill: $dark;
+}
+
+.btn-accent-inverted {
+  border: 3px solid transparent;
+  color: $dark;
+  background: linear-gradient(45deg, $accent, $light-accent);
+}
+
+.btn-big {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1.5em 0;
+  max-width: 15rem;
+  min-width: 15rem;
+}
+
+.btn-big:hover {
+  background: linear-gradient(45deg, $accent, $light-accent);
+  color: $dark;
+  border: 3px solid transparent;
+}
+
+.btn-icon {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+ .flex-wrap {
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+.block {
+  display: block;
+}

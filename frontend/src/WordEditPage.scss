@@ -1,0 +1,59 @@
+@import './_SharedVariables.scss';
+
+.word_edit__outer_container {
+  position: relative;
+
+  .btn {
+    position: absolute;
+    top: -3em;
+    z-index: 1000;
+  }
+
+  .btn:first-of-type {
+    right: 51%;
+  }
+
+  .btn:nth-of-type(2) {
+    right: 43%;
+  }
+
+  .btn-toggle {
+    background: $light;
+    border: 3px solid transparent;
+  }
+
+  .word_edit__icon {
+    width: 1.5em;
+    height: 1.25em;
+  }
+}
+
+.word_edit__input_container {
+  background: mix(black, $dark, 30%);
+  border-radius: 20px;
+  position: relative;
+  text-align: left;
+  padding: 1.5em;
+  max-height: 80vh;
+  overflow: scroll;
+}
+
+@media only screen and (max-width : 700px) {
+  .word_edit__outer_container {
+    .btn:first-of-type {
+      right: -0.5em;
+      top: 0;
+    }
+
+    .btn:nth-of-type(2) {
+      right: -0.5em;
+      top: 4em;
+    }
+  }
+
+  .word_edit__input_container {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    left: -4vw;
+  }
+}
